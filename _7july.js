@@ -72,27 +72,7 @@
 // console.log(sumWithInitial); 
 
 
-// // reduce prototype
-function sum1(acc,curr){
-    
-    return acc+curr;
-}
-
-
-const array1=[1,2,3,4];
-
-Array.prototype.reduceReplica=function(logic,initialValue){
-        let result=initialValue;
-
-        for(let i=0;i<this.length;i++){
-            result=logic(result,this[i]);
-        }
-        return result;
-}
-
-const result=array1.reduceReplica((acc,curr)=>acc+curr,0);
-console.log(result);
-// const initialValue=0;
+_// const initialValue=0;
 
 // const sumWithIntial2=array1.reduceReplica(
 //     (accumulator,currentValue)=>accumulator+currentValue,
